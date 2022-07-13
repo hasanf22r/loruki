@@ -1,0 +1,47 @@
+<form [formGroup]="productForm">
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" name="name" formControlName="Name"/>
+    </div>
+    <div class="form-group">
+        <label for="price">Price</label>
+        <input type="text" name="price" formControlName="Price"/>
+    </div>
+    <div class="form-group">
+        <label for="quantityinstock">QuantityInStock</label>
+        <input type="number" name="quantityinstock" formControlName="QuantityInStock"/>
+    </div>
+    <div class="form-group">
+        <label for="description">Description</label>
+        <textarea name="description" formControlName="Description"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="picture">Picture</label>
+        <input type="file" name="picture" (change)="onChange($event)"/>
+    </div>
+    <div class="form-group">
+        <label for="type">Type</label>
+        <select name="type" formControlName="Type">
+            <option>Speaker</option>
+            <option>Mobile</option>
+            <option>Laptop</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="brand">Brand</label>
+        <select name="brand" formControlName="Brand">
+            <option>Sony</option>
+            <option>Samsung</option>
+            <option>Dell</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <input type="button" value="Submit" (click)="onSubmit()"/>
+    </div>
+</form>
+
+
+
+
+ 
+

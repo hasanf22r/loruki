@@ -1,0 +1,10 @@
+<div class="order-grid">
+    <div *ngFor="let p of basket" style="text-align: center;display: flex;align-items: center;">
+        <img width="100" src="https://localhost:5001/images/{{p.pictureUrl}}" alt="">
+        <p>{{p.price}}&dollar;</p>
+        <p>{{p.description}}</p>
+        <p>
+            <a class="btn">remove</a>
+        </p>
+    </div>
+</div>

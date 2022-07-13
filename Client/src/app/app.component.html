@@ -1,0 +1,18 @@
+<div class="container">
+  <nav style="display: flex;gap: 50px;">
+    <a routerLink="/product/list">Product List</a>
+    <a routerLink="/product/create">Product Create</a>
+    <a routerLink="/order">Order Product</a>
+    <a routerLink="/order/list">Order List</a>
+  
+    <a>
+      {{basketCount}}
+    </a>
+  
+    <a routerLink="/user/login">login</a>
+    <a routerLink="/user/register">register</a>
+  </nav>
+  
+  <router-outlet></router-outlet>
+  
+</div>

@@ -1,0 +1,12 @@
+.order-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+}
+
+.btn {
+    cursor: pointer;
+    background-color: rgb(207, 29, 29);
+    color: white;
+    border-radius: 3px;
+}
